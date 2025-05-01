@@ -1,6 +1,6 @@
 import os
-import telebot
 from dotenv import load_dotenv
+from telebot import TeleBot, types
 
 
 load_dotenv()
@@ -13,4 +13,4 @@ TELEGRAM_BOT_URL = os.environ.get("TELEGRAM_BOT_URL")
 TG_MINI_APP_URL = os.environ.get("TG_MINI_APP_URL")
 HELP_WEBSITE = os.environ.get("HELP_WEBSITE")
 
-bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
+bot = TeleBot(TELEGRAM_BOT_TOKEN)
